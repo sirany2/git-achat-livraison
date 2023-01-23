@@ -104,7 +104,7 @@ input {
 		outline: 0;
 		border-bottom-color: #6658d3;
 		&+.input-label {
-			color: #6658d3;
+			color: #d35858;
 			transform: translateY(-1.5rem);
 		}
 	}
@@ -154,13 +154,13 @@ input {
             </div>
             <form class="card-form" action="" method="POST">
                 <div class="input">
-                    <input type="text" class="input-field" required/>
-                    <label class="input-label">Numéro de téléphone</label>
+                    <input type="text" class="input-field" placeholder="Numéro de téléphone" required/>
+                    <label class="input-label" ></label>
                 </div>
 
                 <div class="input">
-                    <input type="password" class="input-field" required/>
-                    <label class="input-label">Mot de passe</label>
+                    <input type="password" class="input-field"placeholder="mot de passe" required/>
+                    <label class="input-label"></label>
                 </div>
                 <div class="action">
                     <button class="action-button">Se connecter</button>

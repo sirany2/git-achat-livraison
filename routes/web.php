@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\AchatController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -15,26 +16,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
-Route::get('/apropos', function () {
-    return view('apropos');
-});
-Route::get('/liste achats', function () {
-    return view('list achats');
-});
-Route::get('/contact', function () {
-    return view('contact');
+
 });
 
-Route::get('/connexion', function () {
-    return view('connexion');
-});
+Route::get('/connexion', [AchatController::class ,'connexion']
+);
 
-Route::get('/inscription', function () {
-    return view('inscription');
-});
+Route::get('/inscription',[Achatcontroller::class,'inscription']
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
+);
+
+Route::get('/dashboard',[Achatcontroller::class,'dashboard']
+
+);
+Route::POST('/envoie',[Achatcontroller::class ,'envoie']);
 

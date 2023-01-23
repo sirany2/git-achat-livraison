@@ -5,11 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achats & livraison</title>
+    <title>Achat Livraison</title>
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
     <script src="https://unpkg.com/scrollreveal@4.0.0-beta.6"></script>
@@ -19,34 +16,35 @@
 
 <body>
     <header class="site-header">
+        <h6>livraison gratuit sur votre premier achat</h6>
         <div class="container">
             <div class="header-content">
                 <div class="top-menu  scroll-reveal">
                     <div class="menu">
                         <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
                             <button class="menu-icon dark" type="button" data-toggle="main-nav"></button>
-                            <div class="title-bar-title"></div>
+                            <div class="title-bar-title">Menu</div>
                         </div>
+
 
                         <nav id="main-nav" data-animate="menu-in menu-out">
                             <ul class="main-navigation">
-                                <li><a class="m-active" href="#" data-text="Home"></a></li>
-                                <li><a class="m-anim" href="#specials-grid" data-text="Specials"></a></li>
-                                <li><a class="m-anim" href="#about-us" data-text="About"></a></li>
-                                <li><a class="m-anim" href="#main-menu" data-text="Menu Cart"></a></li>
-                                <li><a class="m-anim" href="#contact-us" data-text="Contact"></a></li>
+                                <li><a class="m-active" href="#" data-text="Home">ACCUIEL</a></li>
+                                <li><a class="m-anim" href="/connexion" data-text="Specials">Connexion</a></li>
+                                <li><a class="m-anim" href="/inscription" data-text="Menu Cart">Inscription </a></li>
+                                <li><a class="m-anim" href="/dashboard" data-text="Contact">Liste ingredients</a></li>
+
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
         </div>
-        @include('nav')
         <div class="slider">
             <div class="a-slide slide1">
                 <div class="container">
                     <div class="bottom-section scroll-reveal" data-origin="right" data-distance="20%">
-                        <h1 class="header-txt">Plus besoin de vous deplacer pour tous vos achats de marchandises</h1>
+                        <h1 class="header-txt">Bienvenue! chez sirat pour tout vos achat de marchandise.</h1>
                         <div class="divider">
                             <?xml version="1.0" encoding="utf-8"?>
                             <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -72,7 +70,7 @@
             <div class="a-slide slide2">
                 <div class="container">
                     <div class="bottom-section">
-                        <h1 class="header-txt">Sirat Sisy est votre solution facile simple et rapide</h1>
+                        <h1 class="header-txt">Venez découvrir l'expérience exceptionnelle que nous avons à vous offrir et laissez-nous vous montrer pourquoi nous sommes la meilleure option pour vos besoins!</h1>
                         <div class="divider">
                             <?xml version="1.0" encoding="utf-8"?>
                             <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -97,25 +95,64 @@
         </div>
 
     </header>
+    <style>
+         nav {
+
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                  }
+
+                  nav ul {
+                    list-style: none;
+                    display: flex;
+
+                  }
+
+                  nav ul li {
+                    margin: 0 10px;
+                    padding :30px;
+
+                  }
+
+                  nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 18px;
+                    height: 10px;
+
+                  }
+    </style>
 
     <section class="category-icons">
+
         <div class="container">
             <div class="yellow-content">
-                <div class="icon">
-                    <img class="scroll-reveal" data-origin="top" data-distance="20%" src="assets/icon-vege.svg" />
-                    <h3 class="scroll-reveal" data-origin="top" data-distance="20%">Achats de marchandises</h3>
-                    <p class="scroll-reveal" data-distance="0" data-duration="500">Pour tous vos achats de marchandises,listé vos differents commande afin d'etre livrer en tout securité.</p>
+                <nav>
+                    <ul>
+                      <li><a href="#home">Fruit et Legume</a></li>
+                      <li><a href="#about">Attieke & Riz</a></li>
+                      <li><a href="#services">Viande et Volaille</a></li>
+                      <li><a href="#contact">Article pour Bébé</a></li>
+                    </ul>
+                    <div class="input">
+                    <select name="" id="" class="input-field">
+                    <option value="">choix par categories</option>
+                    <option value="article de maison">article de maison</option>
+                    <option value="aliment congelé">aliment congelé</option>
+                    <option value="attieke & riz">attieke & riz</option>
+                    <option value="drap & serviette en friperie">drap & serviette</option>
+                </select>
                 </div>
-                <div class="icon">
-                    <img class="scroll-reveal" data-origin="top" data-distance="20%" src="assets/icon-coffee.svg" />
-                    <h3 class="scroll-reveal" data-origin="top" data-distance="20%">Livraison</h3>
-                    <p class="scroll-reveal" data-distance="0" data-duration="700">vos marchandises seront livrer à temps dans un delais bien prise,par nos meilleurs livrer.</p>
-                </div>
-                <div class="icon">
-                    <img class="scroll-reveal" data-origin="top" data-distance="20%" src="assets/icon-sweet.svg" />
-                    <h3 class="scroll-reveal" data-origin="top" data-distance="20%">payement</h3>
-                    <p class="scroll-reveal" data-distance="0" data-duration="900"> le payement sera fait apres livraison de la marchandises</p>
-                </div>
+                  </nav>
+
+
+
+
+
+
             </div>
             <!--.yellow-content-->
         </div>
@@ -125,7 +162,7 @@
 
     <section id="specials-grid" class="month-specials" data-scroll-reveal="enter from the bottom after 0.9s">
         <div class="container">
-            <h1 class="header-txt">ous vouvez trouvé tous vos fruits et légumes chez nous</h1>
+            <h1 class="header-txt">Faite votre course en ligne et profiter de nos livraison partout Abidjan à domicile où au travail</h1>
             <div class="divider">
                 <?xml version="1.0" encoding="utf-8"?>
                 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -149,10 +186,10 @@
                         <img src="assets/img/special-1.png" />
                     </div>
                     <div class="special-items spec-01">
-                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Greens fava</h2>
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%"></h2>
                         <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
-                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Nori grape silver beet broccoli kombu beet greens fava</p>
-                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">19$</span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%"></p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%"></span>
                     </div>
                 </div>
                 <!--.special-->
@@ -161,10 +198,10 @@
                         <img src="assets/img/special-2.png" />
                     </div>
                     <div class="special-items spec-02">
-                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Celery quand</h2>
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%"></h2>
                         <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
-                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Celery quandong swiss chard chicory earthnut pea</p>
-                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">18$</span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%"></p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%"></span>
                     </div>
                 </div>
                 <!--.special-->
@@ -173,19 +210,19 @@
                         <img src="assets/img/special-3.png" />
                     </div>
                     <div class="special-items spec-03">
-                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Pea horser</h2>
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%"></h2>
                         <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
-                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Kohlrabi radish okra azuki bean corn fava bean mustard</p>
-                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">7$</span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%"></p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%"></span>
                     </div>
                 </div>
                 <!--.special-->
                 <div class="special">
                     <div class="special-items spec-04">
-                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Soko radicchio</h2>
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%"></h2>
                         <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
-                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Dandelion zucchini burdock yarrow chickpea dandelion</p>
-                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">25$</span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%"></p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%"></span>
                     </div>
                     <div class="special-img img-04">
                         <img src="assets/img/special-4.png" />
@@ -194,10 +231,10 @@
                 <!--.special-->
                 <div class="special">
                     <div class="special-items spec-05">
-                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Tigernut</h2>
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%"></h2>
                         <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
-                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Grape silver beet watercress potato tigernut</p>
-                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">14$</span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%"></p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%"></span>
                     </div>
                     <div class="special-img img-05">
                         <img src="assets/img/special-5.png" />
@@ -206,10 +243,10 @@
                 <!--.special-->
                 <div class="special">
                     <div class="special-items spec-06">
-                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%">Yarrow sweet</h2>
+                        <h2 class="scroll-reveal" data-origin="top" data-distance="20%"></h2>
                         <span class="line scroll-reveal" data-origin="top" data-distance="20%"></span>
-                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%">Gumbo kakadu plum komatsuna black-eyed pea green</p>
-                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%">8$</span>
+                        <p class="scroll-reveal" data-origin="bottom" data-distance="30%"></p>
+                        <span class="scroll-reveal" data-origin="bottom" data-distance="60%"></span>
                     </div>
                     <div class="special-img img-06">
                         <img src="assets/img/special-6.png" />
@@ -226,7 +263,7 @@
     <section id="about-us" class="about">
         <div class="container">
             <div class="about-content">
-                <h1 class="header-txt scroll-reveal">apropos de nous</h1>
+                <h1 class="header-txt scroll-reveal">A propos de nous</h1>
                 <div class="divider scroll-reveal">
                     <?xml version="1.0" encoding="utf-8"?>
                     <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -244,7 +281,8 @@
                                 </svg>
                 </div>
                 <!--.divider-->
-                <p class="scroll-reveal" data-origin="top" data-distance="10%">Dans le but devenir en aide aux personnes qui desire fait leurs achats en ligne sans se deplacer,c'est dans cette optique que nous avons decider de créer l'entreprise sirat sisy pour éfectuer vos achats de marchandise,legumes et fruits sans se fatigué,rapide ,fiable et securisé.</p>
+                <p class="scroll-reveal" data-origin="top" data-distance="10%">Bienvenue sur notre site web! Nous sommes ravis de vous présenter notre entreprise et les</p>
+                <p>produits/services que nous offrons. Nous sommes fiers de proposer des solutions de qualité supérieure pour répondre à tous vos besoins.</p>
                 <img class="signature scroll-reveal" data-origin="right" data-distance="20%" src="assets/signature.png" />
             </div>
         </div>
@@ -254,7 +292,7 @@
 
     <section id="main-menu" class="menu-cart scroll-reveal">
         <div class="container">
-            <h1 class="header-txt">Menu Cart</h1>
+            <h1 class="header-txt">Autres</h1>
             <div class="divider">
                 <?xml version="1.0" encoding="utf-8"?>
                 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -272,52 +310,18 @@
                                 </svg>
             </div>
             <!--.divider-->
+            <ul class="menu-navigation" data-tabs data-match-height="true" id="example-tabs">
+                <li class="tabs-title is-active"><a class="m-anim" href="#panel1" aria-selected="true" data-text="Starters">Lait</a></li>
+                <li class="tabs-title"><a class="m-anim" data-tabs-target="panel2" href="#panel2" data-text="Main Dishes">Plat </a></li>
+                <li class="tabs-title"><a class="m-anim" data-tabs-target="panel3" href="#panel3" data-text="Desserts">Desert</a></li>
+                <li class="tabs-title"><a class="m-anim" data-tabs-target="panel4" href="#panel4" data-text="Drinks">degué</a></li>
+            </ul>
 
 
-            <h6 style="color: red">FORMULAIRE</h6>
+                        <!--.menu-section-->
 
 
-
-            <FORm action="achat" method="POST">
-
-
-
-                <div class="account-type">
-                    <input type="radio" value="none" id="radioOne" name="account" checked/>
-                    <label for="radioOne" class="radio">Personal</label>
-                    <input type="radio" value="none" id="radioTwo" name="account" />
-                    <label for="radioTwo" class="radio">Company</label>
-                  </div>
-                  <hr>
-                  <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
-                  <input type="text" name="name" id="name" placeholder="Email" required/>
-                  <label id="icon" for="name"><i class="fas fa-user"></i></label>
-                  <input type="text" name="name" id="name" placeholder="Name" required/>
-                  <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
-                  <input type="password" name="name" id="name" placeholder="Password" required/>
-                  <hr>
-                  <div class="gender">
-                    <input type="radio" value="none" id="male" name="gender" checked/>
-                    <label for="male" class="radio">Male</label>
-                    <input type="radio" value="none" id="female" name="gender" />
-                    <label for="female" class="radio">Female</label>
-                  </div>
-                  <hr>
-
-            <input type="submit"><br><br>
-                  </div>
-                </form>
-              </div>
-            </body>
-          </html>
-
-
-
-
-
-
-
-
+    <a href="#0" class="cd-top">Top</a>
 
     <footer id="contact-us">
         <div class="container">
@@ -328,7 +332,7 @@
                     <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1930 255.5" style="enable-background:new 0 0 1930 255.5;" xml:space="preserve">
                                 <style type="text/css">
-                                    .st0{fill:none;stroke:red;stroke-width:10;stroke-linecap:square;stroke-miterlimit:10;}
+                                    .st0{fill:none;stroke:#3c3c3c;stroke-width:10;stroke-linecap:square;stroke-miterlimit:10;}
                                 </style>
                                 <polyline class="st0" points="1224,171.8 1181.3,171.8 1139.2,129.6 1065,203.9 970.5,110.4 876,203.6 801.8,129.4 759.7,171.5
                                     717,171.5 "/>
@@ -342,22 +346,22 @@
                 <!--.divider-->
                 <div class="contact-info scroll-reveal">
                     <div class="info-address">
-                        <h3>Sirat sira</h3>
-                        <p>234 Abidjan cocody<br>angre 123</p>
+                        <h3>Sirat</h3>
+                        <p>Abidjan cocody <br>apres barrage, rue ministre</p>
                     </div>
                     <div class="reservations">
                         <h3>Reservations</h3>
-                        <p>sidibesira@achatlivraison.com<br>+2250769594234</p>
+                        <p>reservationssirat.com<br>+2250769594234</p>
                     </div>
                 </div>
                 <!--.contact-info-->
                 <div class="contact-form scroll-reveal" data-origin="bottom" data-distance="20%">
                     <h3>Contactez nous</h3>
                     <form>
-                        <input type="text" name="Nom" placeholder="Nom">
+                        <input type="text" name="nom" placeholder="Nom">
                         <input type="email" name="email" placeholder="Email">
                         <textarea placeholder="Message"></textarea>
-                        <button class="send-form">valider</button>
+                        <button class="send-form">envoyer</button>
                     </form>
                 </div>
                 <!--.contact-form-->
@@ -384,7 +388,7 @@
                 <!--.social-icons-->
             </div>
             <!--.footer-content-->
-            <p class="copy-info">Copyright 2023 Sirat Sisy</p>
+            <p class="copy-info">Copyright 20122 © by Sirat</p>
         </div>
         <!--.container-->
     </footer>

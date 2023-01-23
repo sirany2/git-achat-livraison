@@ -271,6 +271,16 @@ $(document).ready(function(){
 				<div class="row">
 					<div class="col-sm-6">
 						<h2>Gestion des <b>Commandes</b></h2>
+                       <marquee style="color:goldenrod; font-size:16px;">
+
+                            <i>
+                            NB:SEUL LES COMMANDES D'ABIDJAN SONT OUVERT PAR NOTRE SOLUTION
+
+                            </i>
+
+                       </marquee>
+
+
 					</div>
 					<div class="col-sm-6">
 						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Nouvelle commande</span></a>
@@ -341,7 +351,7 @@ $(document).ready(function(){
 					</div>
 					<div class="form-group">
 						<label>Quantité</label>
-						<input type="email" class="form-control" required>
+						<input type="text" class="form-control" required>
 					</div>
 					<div class="form-group">
 						<label>Montant</label>
@@ -372,11 +382,11 @@ $(document).ready(function(){
 					</div>
 					<div class="form-group">
 						<label>Quantité</label>
-						<input type="email" class="form-control">
+						<input type="text" class="form-control">
 					</div>
 					<div class="form-group">
 						<label>Montant</label>
-						<input type="email" class="form-control">
+						<input type="text" class="form-control">
 					</div>
 
 				</div>

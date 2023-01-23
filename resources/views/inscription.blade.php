@@ -152,30 +152,41 @@ input {
                     <small>Création de votre compte</small>
                 </h2>
             </div>
-            <form class="card-form" action="" method="POST">
+            <form class="card-form" action="envoie" method="POST">
                 <div class="input">
-                    <input type="text" class="input-field" required/>
-                    <label class="input-label">Nom & prénom</label>
+                    <input type="text" class="input-field" placeholder="nom & prenom (*)" required/>
+                    <label class="input-label"></label>
                 </div>
                 <div class="input">
-                    <input type="text" class="input-field" required/>
-                    <label class="input-label">Numéro de téléphone</label>
+                    <select name="" id="" class="input-field">
+                        <option value="Femme" >Femme</option>
+                        <option value="Homme">Homme</option>
+                    </select>
+                    </div>
+                <div class="input">
+                    <input type="text" class="input-field"  placeholder="Numero de telephone" required/>
+                    <label class="input-label"></label>
                 </div>
                 <div class="input">
-                    <input type="text" class="input-field" required/>
-                    <label class="input-label">Adresse e-mail</label>
+                    <input type="text" class="input-field" placeholder="Adresse e-mail"  required/>
+                    <label class="input-label"></label>
                 </div>
                 <div class="input">
-                    <input type="text" class="input-field" required/>
-                    <label class="input-label">Commune</label>
+                    <input type="text" class="input-field" placeholder="commune /quatier/sous quartier" required/>
+                    <label class="input-label"></label>
                 </div>
                 <div class="input">
-                    <input type="password" class="input-field" required/>
-                    <label class="input-label">Mot de passe</label>
+                    <input type="password" class="input-field" placeholder="Mot d passe" required/>
+                    <label class="input-label"></label>
                 </div>
                 <div class="input">
-                    <input type="password" class="input-field" required/>
-                    <label class="input-label">Confirmation du mot de passe</label>
+                    <input type="password" class="input-field" placeholder="Confirmation de mot de passe" required/>
+                    <label class="input-label"></label>
+                </div>
+
+                    {{-- <input type="password" class="input-field" placeholder="Genre" required/> --}}
+                    {{-- <label class="input-label"></label> --}}
+
                 </div>
 
                 <div class="action">

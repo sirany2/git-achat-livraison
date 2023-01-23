@@ -20,15 +20,17 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'prenom',
-        'telephone',
-        'ville',
+        'numero telephone',
         'commune',
-        'liste achats',
-        'genre',
-        'adresse',
         'mail',
-        'verification mail',
         'password',
+        'confirm',
+        'ingredient',
+        'quantite',
+        'montants',
+        'suppession de commande',
+        'ajouter une commande',
+
     ];
 
     /**
