@@ -7,8 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Commande extends Model
 {
-    protected $fillable = [
-   'id', 'nom' ,'prenom','telephone','ingredients','communune',
-    'montant','password', 'confirm password','quantite','action ','suppression de commande',
-       'ajouter une commande', ];
+    use HasFactory;
+    protected $fillable = [];
 }

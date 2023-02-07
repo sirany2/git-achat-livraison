@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('commandes', function (Blueprint $table) {
             $table->id();
+            $table->string('montant');
+            $table->string('ingredients');
+            $table->string('commune');
+            $table->integer('quantite');
+            $table->integer('user_id')->index();
             $table->timestamps();
         });
     }

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use App\Models\Achat;
 use App\Models\User;
 use Illuminate\support\facade\hash;
+use Illuminate\Support\Facades\Auth;
+
 
 use Illuminate\Http\Request;
 

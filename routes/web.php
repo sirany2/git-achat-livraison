@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AchatController;
 
 use Illuminate\Support\Facades\Route;
@@ -29,5 +30,7 @@ Route::get('/inscription',[Achatcontroller::class,'inscription']
 Route::get('/dashboard',[Achatcontroller::class,'dashboard']
 
 );
-Route::POST('/envoie',[Achatcontroller::class ,'envoie']);
+Route::post('/login', [AuthController::class ,'login']);
+Route::post('/register', [AuthController::class ,'register']);
+Route::get('/logout', [AuthController::class ,'logout']);
 

@@ -152,14 +152,15 @@ input {
                     <small>Connexion à votre compte</small>
                 </h2>
             </div>
-            <form class="card-form" action="" method="POST">
+            <form class="card-form" action="{{ url('/login') }}" method="POST">
+            @csrf
                 <div class="input">
-                    <input type="text" class="input-field" placeholder="Numéro de téléphone" required/>
+                    <input type="text" class="input-field" name="numero" placeholder="Numéro de téléphone" required/>
                     <label class="input-label" ></label>
                 </div>
 
                 <div class="input">
-                    <input type="password" class="input-field"placeholder="mot de passe" required/>
+                    <input type="password" name='password' class="input-field"placeholder="mot de passe" required/>
                     <label class="input-label"></label>
                 </div>
                 <div class="action">

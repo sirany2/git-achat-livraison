@@ -283,8 +283,17 @@ $(document).ready(function(){
 
 					</div>
 					<div class="col-sm-6">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ auth()->user()->nom }}
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Profil</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{{ url('logout') }}">Déconnexion</a>
+                        </div>
+                        </div>
 						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Nouvelle commande</span></a>
-						<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Supprimer</span></a>
 					</div>
 				</div>
 			</div>
