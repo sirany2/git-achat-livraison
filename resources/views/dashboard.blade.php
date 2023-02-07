@@ -306,9 +306,9 @@ $(document).ready(function(){
 								<label for="selectAll"></label>
 							</span>
 						</th>
-						<th>Indrédients</th>
-						<th>Quantité</th>
-						<th>Montant</th>
+						<th>Date</th>
+						<th>Total</th>
+						<th>Etat</th>
 						<th>Actions</th>
 					</tr>
 				</thead>
@@ -321,9 +321,9 @@ $(document).ready(function(){
 								<label for="checkbox5"></label>
 							</span>
 						</td>
-						<td>Tomata</td>
-						<td>5</td>
-						<td>400</td>
+						<td>lundi 06 février</td>
+						<td>5 000</td>
+						<td>brouillon</td>
 						<td>
 							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Modification">&#xE254;</i></a>
 							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Supprimer">&#xE872;</i></a>
@@ -366,6 +366,24 @@ $(document).ready(function(){
 						<label>Montant</label>
 						<input type="text" class="form-control" required>
 					</div>
+                     <table class="table table-bordered">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Indrédients</th>
+            <th scope="col">Quantité</th>
+            <th scope="col">Montant</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Tomate</td>
+            <td>15</td>
+            <td>4500</td>
+            </tr>
+        </tbody>
+        </table>
 				</div>
 				<div class="modal-footer">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Annuler">
@@ -397,7 +415,24 @@ $(document).ready(function(){
 						<label>Montant</label>
 						<input type="text" class="form-control">
 					</div>
-
+          <table class="table table-bordered">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Indrédients</th>
+            <th scope="col">Quantité</th>
+            <th scope="col">Montant</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Tomate</td>
+            <td>15</td>
+            <td>4500</td>
+            </tr>
+        </tbody>
+        </table>
 				</div>
 				<div class="modal-footer">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Annuler">
